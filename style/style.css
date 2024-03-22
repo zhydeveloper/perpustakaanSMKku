@@ -1,0 +1,350 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    outline: none;
+    text-decoration: none;
+    border: none;
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: sans-serif;
+   
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1.3rem 7%;
+    background: linear-gradient(to right, #59D5E0, #40679E );
+    border-bottom:1px solid black ;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 9999;
+}
+
+.navbar .navbar-logo {
+    font-size: 1.5rem;
+    font-weight: 700;
+    color: white;
+}
+
+.navbar .navbar-logo span {
+    color: #40679E;
+    font-size: 2rem;
+    font-style: italic;
+}
+
+.navbar .navbar-nav a {
+    color: black;
+    display: inline-block;
+    font-size: 1rem;
+    margin: 0 1rem;
+}
+
+.navbar .navbar-nav a:hover {
+    color: white;
+}
+
+.navbar .navbar-nav a::after {
+    content: '';
+    display: block;
+    padding-bottom: 0.5rem;
+    border-bottom: 0.2rem solid rgb(4, 250, 4);
+    transform: scaleX(0);
+    transition:  0.2s linear;
+}
+
+.navbar .navbar-nav a:hover::after {
+    transform: scaleX(0.5);
+}
+
+.hero {
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    background-image: url(../img/back.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    position: relative;
+    mask-image: linear-gradient(rgba(64,103,158,1)85%,rgba(64,103,158,0));
+    -webkit-mask-image: linear-gradient(rgba(64,103,158,1)85%,rgba(64,103,158,0));
+}
+
+.humburger-menu {
+    color: black;
+}
+
+
+.hero .content {
+    padding: 1.4rem 7%;
+    width: 100%;
+}
+
+.hero .content h1 {
+    font-size: 5rem;
+    color: white;
+    text-shadow: 1px 1px 5px rgba(64, 103, 158, 1);
+}
+
+.hero .content span {
+    color: rgb(64, 103, 158);
+    text-shadow: 1px 1px 3px black;
+}
+
+.hero .content p {
+    font-size: 1.6rem;
+    line-height: 1;
+    font-weight: bold;
+    margin-top: 1rem;
+    text-shadow: 1px 1px 3px black;
+    color: white;
+}
+
+.hero .content .sosmed {
+    margin-top: 1rem;
+}
+
+.card-content,
+.contact {
+    padding: 10rem 7% 1.4rem;
+}
+
+.card-content h1 {
+    text-align: center;
+    font-size: 3.5rem;
+    padding-bottom: 1rem;
+    border-bottom:1.5px solid #59D5E0;
+    margin-bottom: 3rem;
+}
+
+.card-content .row {
+    display: grid;
+    gap: 1rem;
+    margin-top: 4rem;
+    grid-template-columns: repeat(auto-fit, minmax(15rem, 1fr)); 
+    /* grid-template-columns: 1fr 1fr; Mengatur grid menjadi 2 kolom */
+    justify-content: center;
+}
+
+.card {
+    gap: 1rem;
+    padding: 1rem;
+    border-radius: 12px;
+    border: 1px solid black;
+}
+
+.card-img-top {
+    width: 100%;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 1);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.card-body {
+    margin-top: 1rem;
+}
+
+.card-title {
+    font-size: 1.7rem;
+}
+
+.card-text {
+    line-height: 1;
+    margin-top: 0.7rem;
+}
+
+.btn {
+    margin-top: 1rem;
+    display: inline-block;
+    background-color: #59D5E0;
+    padding: 1rem;
+    color: black;
+    border-radius: 5px;
+}
+
+
+.btn:hover {
+   background-color: #40679E;
+   color: white;
+}
+
+
+
+
+.contact h1 {
+    text-align: center;
+    font-size: 3.5rem;
+    padding-bottom: 1rem;
+    border-bottom: 1px solid #59D5E0;
+}
+
+.form-container {
+    margin-top: 2rem;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    max-width: auto;
+    width: 100%;
+}
+
+.form-group {
+    margin-bottom: 20px;
+  }
+
+  .form-group label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+    font-size: 2rem;
+  }
+
+  .form-group input,
+  .form-group textarea {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+  }
+
+  .form-group button {
+    width: 100%;
+    padding: 10px;
+    background-color: #40679E;
+    color: white;
+    border: 1px solid black;
+    border-radius: 3px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+  }
+
+  .form-group button:hover {
+    background-color: rgb(4, 250, 4);
+  }
+
+  .site-footer {
+    background-color: #40679E;
+    color: white;
+    padding: 50px 0;
+  }
+
+  .container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+  }
+
+  .footer-bottom {
+    background: linear-gradient(to right, #59D5E0, #40679E );
+    padding: 10px 0;
+  }
+
+  .footer-bottom p {
+    margin: 0;
+    text-align: center;
+    font-size: 14px;
+  }
+
+
+  .main-table {
+    padding: 10rem 7% 1.4rem;
+    text-align: center;
+  }
+
+  .main-table h1 {
+    margin-bottom: 2rem;
+    text-align: left;
+  }
+
+  .table {
+   display: flex;
+   justify-content: space-between;
+   margin-top: 20px; 
+  }
+
+  table {
+    border-collapse: collapse;
+    width: 100%; 
+  }
+
+  th, td {
+    padding: 8px;
+    border-bottom: 1px solid #7e7e7e;
+  }
+
+  th {
+   background-color: #e8e5e5;
+   font-size: 1.4rem;
+  }
+
+  td {
+    font-size: 1.2rem;
+    color: black;
+    background-color: #cccccc;
+  }
+
+ 
+
+
+#humburger-menu {
+    display: none;
+}
+
+
+@media(max-width: 1366px) {
+    html {
+        font-size: 75%;
+    }
+}
+
+
+@media(max-width: 768px) {
+    html {
+        font-size: 62.5%;
+    }
+
+    #humburger-menu {
+        display: inline-block;
+    }
+    .navbar .navbar-nav {
+       position: absolute;
+       top: 100%;
+       right: -100%;
+       background: linear-gradient(to right, #40679E, #59D5E0 );
+       width: 25rem;
+       height: 100vh;
+       transition: 300ms;
+    }
+    .navbar .navbar-nav.active {
+        right: 0;
+    }
+
+    .navbar .navbar-nav a {
+        color: black;
+        display: block;
+        margin: 2rem;
+        align-items: center;
+        padding: 0.5rem;
+        font-size: 2rem;
+    }
+
+    .navbar .navbar-nav a::after {
+        transform-origin: 0 0;
+    }
+
+    .navbar .navbar-nav a:hover::after {
+        transform: scaleX(0.2);   
+    }
+
+    .card-content {
+        font-size: 1rem;
+    }
+
+}

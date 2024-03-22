@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>PerpustakaanSMKKU</title>
+    <!-- css -->
+    <link rel="stylesheet" href="../style/style.css" />
+    <!-- feather-icon -->
+    <script src="https://unpkg.com/feather-icons"></script>
+    <!-- bostrap -->
+    <!-- <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH"
+      crossorigin="anonymous"
+    />
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.min.js"
+      integrity="sha384-0pUGZvbkm6XF6gxjEnlmuGrJXVbNuzT9qBBavbLwCsOGabYfZo0T0to5eqruptLy"
+      crossorigin="anonymous"
+    ></script> -->
+     <!-- 3d -->
+     <a href="https://icons8.com/icon/38941/book">Book</a>
+     icon by
+     <a href="https://icons8.com">Icons8</a>
+  </head>
+  <body>
+    <header>
+      <nav class="navbar">
+        <a href="#" class="navbar-logo">Perpustakaan<span>SMK</span></a>
+        <div class="navbar-nav">
+          <a href="#home"><i data-feather="home"></i>Home</a>
+          <a href="#card-book"><i data-feather="book"></i>Buku</a>
+          <a href="#contact"><i data-feather="user"></i>Contact</a>
+          <a href="./status.html"><i data-feather="info"></i> Status</a>
+        </div>
+        <a href="#" id="humburger-menu" class="humburger-menu"
+          ><i data-feather="menu"></i
+        ></a>
+      </nav>
+    </header>
+    <!-- hero section -->
+    <section class="hero" id="home">
+      <div class="mask-container">
+        <main class="content">
+          <h1>Perpustakaan SMKN1<span> Setia Janji</span></h1>
+          <p>
+            Adalah sebuah website yang menyediakan sebuah Perpustakaan yang
+            lengkap bagi pengguna online untuk dibaca dan dipinjam secara
+            offline
+          </p>
+      </div>
+    </section>
+    <!-- buku section-->
+    <section id="card-book" class="card-content">
+      <h1>Book <img width="40" height="40" src="https://img.icons8.com/office/40/book.png" alt="book"/></h1>
+      <div class="row">
+        <div class="card">
+          <img src="../img/js.profiosional.png" style="height: 180px;" class="card-img-top" alt="book1" />
+          <div class="card-body">
+            <h5 class="card-title">Javascript Profisional</h5>
+            <p class="card-text">
+              Some quick example text to build on the card title and make up the
+              bulk of the card's content.
+            </p>
+            <a href="../pdf/JavaScriptNotesForProfessionals.pdf" class="btn">Baca</a>        
+          </div>
+        </div>
+        <div class="card">
+          <img src="../img/dasarwebprogamming.png" style="height: 180px;"class="card-img-top" alt="book1" />
+          <div class="card-body">
+            <h5 class="card-title"> Dasar-dasar Web Progamming </h5>
+            <p class="card-text">
+              Some quick example text to build on the card title and make up the
+              bulk of the card's content.
+            </p>
+            <a href="../book/Dasar-dasar Web Progamming .html" class="btn">Baca</a>        
+          </div>
+        </div>
+        <div class="card">
+          <img src="../img/Dasar-dasar.html.css.js.png" style="height: 180px;" class="card-img-top" alt="book1" />
+          <div class="card-body">
+            <h5 class="card-title">HTML.CSS.Javascript</h5>
+            <p class="card-text">
+              Some quick example text to build on the card title and make up the
+              bulk of the card's content.
+            </p>
+            <a href="../book/HTML.CSS.Javascript.html" class="btn">Baca</a>
+          </div>
+      </div>
+    </section>
+
+    <!-- contact section -->
+    <section id="contact" class="contact">
+      <h1>Contact <img width="48" height="48" src="https://img.icons8.com/color/48/user.png" alt="user"/></h1>
+      <div class="form-container">
+        <form id="login-form">
+          <div class="form-group">
+            <label for="email">Email:</label>
+            <input
+              type="email"
+              id="email"
+              name="email"
+              placeholder="Enter your email"
+              required
+            />
+          </div>
+          <div class="form-group">
+            <label for="text">Pesan:</label>
+            <textarea
+              name="Pesan"
+              id="pesan"
+              cols="20"
+              rows="5"
+              placeholder="Masukan Pesan Anda"
+            ></textarea>
+          </div>
+          <div class="form-group">
+            <button type="submit" onclick="sendwhatsapp()">Send</button>
+          </div>
+        </form>
+      </div>
+    </section>
+
+    <section id="footer">
+      <div class="footer-bottom">
+        <div class="container">
+          <p>
+            &copy; 2024 PerpustakaanSMK.Dibuat dengan
+            <i data-feather="at-sign" style="width: 10px; height: 10px;"></i> Azhy Sholihin.
+          </p>
+        </div>
+      </div>
+    </section>
+  </body>
+  <!-- feather -->
+  <script>
+    feather.replace();
+  </script>
+  <script src="/app.js/script.js"></script>
+</html>

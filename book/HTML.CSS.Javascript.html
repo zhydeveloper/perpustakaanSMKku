@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title id="title">HTML.CSS.Javascript</title>
+    <link rel="stylesheet" href="../style/book-style.css" />
+    <!-- feather icon -->
+    <script src="https://unpkg.com/feather-icons"></script>
+  </head>
+  <body>
+    <iframe
+      src="../pdf/HTML, CSS dan Javascript.pdf"
+      width="100%"
+      height="600px"
+      style="border: none"
+    ></iframe>
+    <div class="left-right">
+      <div class="right">
+        <a href="../public/status.html" id="markAsRead"
+          ><i data-feather="arrow-right-circle"></i
+        ></a>
+      </div>
+    </div>
+    <div id="popup" style="display: none">
+      <div id="popup-content">
+        <p>Apakah Anda yakin buku ini sudah selesai dibaca?</p>
+        <button id="confirmButton">Ya</button>
+        <button id="cancelButton">Batal</button>
+      </div>
+    </div>
+  </body>
+  <script>
+    feather.replace();
+  </script>
+  <script>
+    document;
+    document
+      .getElementById("markAsRead")
+      .addEventListener("click", function (event) {
+        event.preventDefault(); // Menghentikan perilaku bawaan dari tautan
+
+        // Tampilkan popup
+        document.getElementById("popup").style.display = "block";
+      });
+
+    document
+      .getElementById("cancelButton")
+      .addEventListener("click", function (event) {
+        // Sembunyikan popup jika tombol Batal diklik
+        document.getElementById("popup").style.display = "none";
+      });
+
+    document
+      .getElementById("confirmButton")
+      .addEventListener("click", function (event) {
+        // Ambil judul buku dari suatu sumber data
+        var bookTitle = "HTML.CSS.Javascript";
+
+        // Simpan status "selesai dibaca" ke Web Storage
+        localStorage.setItem(
+          "bookHTML.CSS.Javascript",
+          JSON.stringify({ title: bookTitle, status: "selesai dibaca" })
+        );
+
+        // Redirect ke halaman status.html
+        window.location.href = "../public/status.html";
+      });
+  </script>
+</html>

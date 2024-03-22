@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Status</title>
+    <link rel="stylesheet" href="../style/style.css" />
+    <!-- feather icon -->
+    <script src="https://unpkg.com/feather-icons"></script>
+  </head>
+  <style>
+    body {
+      background-image: url(../img/backstatus.jpg);
+      background-repeat: no-repeat;
+      background-position: center;
+      background-size: auto;
+    }
+  </style>
+  <body>
+    <header>
+      <nav class="navbar">
+        <a href="#" class="navbar-logo">Perpustakaan<span>SMK</span></a>
+        <div class="navbar-nav">
+          <a href="./index.html"><i data-feather="home"></i>Home</a>
+        </div>
+        <a href="#" id="humburger-menu" class="humburger-menu"
+          ><i data-feather="menu"></i
+        ></a>
+      </nav>
+    </header>
+    <div class="main-table">
+      <h1>Status :</h1>
+      <div class="table">
+        <table>
+          <thead>
+            <tr>
+              <th>Judul Buku</th>
+              <th>Status</th>
+              <th>Action</th>
+            </tr>
+          </thead>
+          <tbody id="Javascript Profisional"></tbody>
+          <tbody id="HTML.CSS.Javascript"></tbody>
+          <tbody id="Dasar-dasar Web Progamming"></tbody>
+        </table>
+      </div>
+    </div>
+    <svg
+      style="display: none"
+      xmlns="http://www.w3.org/2000/svg"
+      width="20"
+      height="20"
+      viewBox="0 0 24 24"
+      fill="none"
+      id="trash2"
+      stroke="currentColor"
+      stroke-width="2"
+      stroke-linecap="round"
+      stroke-linejoin="round"
+      class="feather feather-trash-2"
+    >
+      <polyline points="3 6 5 6 21 6"></polyline>
+      <path
+        d="M19 6v14a2 2 0 0 1-2 2H7a2 2 0 0 1-2-2V6m3 0V4a2 2 0 0 1 2-2h4a2 2 0 0 1 2 2v2"
+      ></path>
+      <line x1="10" y1="11" x2="10" y2="17"></line>
+      <line x1="14" y1="11" x2="14" y2="17"></line>
+    </svg>
+    <!-- Menambahkan script setelah elemen SVG untuk menjalankan fungsi feather.replace() -->
+    <script>
+      feather.replace();
+    </script>
+    <script src="../app.js/script.js"></script>
+    <script src="../app.js/status.js"></script>
+  </body>
+</html>
