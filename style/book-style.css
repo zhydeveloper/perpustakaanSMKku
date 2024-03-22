@@ -1,21 +1,8 @@
-.left-right {
-    position: relative;
+.left-right  {
     display: flex;
-    width: 100%;
+    position: relative;
+    justify-content: center;
 }
-
-.left {
-   width: 700px auto;
-}
-
-.right {
-    position: absolute;
-    top: 0;
-    right: 0;
-    width: 2rem;
-    color: #40679E;
-}
-
 
 #popup {
     display: none;
